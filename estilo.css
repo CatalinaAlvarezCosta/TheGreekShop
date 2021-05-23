@@ -1,0 +1,254 @@
+/*--------General--------*/
+body {
+    font-family: 'Archivo', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black; }
+header {
+    position: sticky;
+    top: 0px;
+    margin: 0 0 10px 0;
+    width: 100%;
+    z-index: 1; 
+}
+  a:hover {
+    color: black; }
+ .navbar-brand img {
+        width: 300px;
+        height: 50px;
+        text-align: center;
+    }
+    .navbar {
+        background-color:white;
+    } 
+#carro {
+    padding-left: 15px;
+}
+.suma  {
+    border-radius: 50px;
+    background-color: #a6938b;
+    color: white;
+}
+
+.resta{
+    border-radius: 50px;
+    background-color: #a6938b;
+    color: white;
+}
+.botonAgregar {
+    background-color: #a6938b;
+    color:white ;
+   width: 270px;
+   height: 40px;
+    border-radius: 50px;
+    letter-spacing: 3px;
+
+}
+.cardsHome:hover{
+        box-shadow: 6px 6px 22px rgba(0, 0, 0, 0.61);
+
+    
+}
+
+@media (min-width:768px) and (max-width:925px) {
+    .botonAgregar {
+       width: 200px;
+       height: 50px;
+    }
+}
+@media (min-width:321px) and (max-width:410px){
+        .navbar-brand img {
+            width: 270px;
+            height: 50px;
+            text-align: center;
+        }
+    }
+@media (max-width:320px){
+        .navbar-brand img {
+            width: 220px;
+            height: 50px;
+            text-align: center;
+        }
+    }
+/*--------Footer--------*/
+
+.footer {
+        background-color: #c2d7e5;
+    height: 130px;
+padding-top: 20px; }
+    
+/*--------Home Section--------*/
+.block {
+    display: none;
+}
+.noBlock {
+    margin-bottom: 20px;
+}
+
+@media (max-width:769px){
+    .block {
+        display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .noBlock {
+        display: none;
+    }
+}
+/*--------Como Comprar-------*/
+#comoComprar {
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   background-color:#AA8C7D;
+   color: white;
+   text-align: center;
+   margin-bottom: 20px;
+}
+.pasos{
+    flex-basis: 30%;
+    padding: 50px;
+ }
+ .pasos p {
+    font-size: 18px;
+ }
+ @media (max-width:902px){
+    #comoComprar { 
+        flex-wrap: wrap;}
+        .pasos{
+            flex-basis: 100%;
+            padding: 30px;
+         }}
+/*--------Carrito Modal--------*/
+.carritoImg {
+    width: 30px;
+    width: 70px;
+}
+.productoEnCarrito {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+}
+#vaciar-carrito {
+    margin-right: 0px;
+}
+
+.modal-carrito {
+    max-height: 600px;
+}
+/*--------Nosotras--------*/
+#nosotras {
+    width: 100%;
+   display: flex;
+}
+.nosotrasFoto {
+    flex-basis: 50%;
+}
+.nosotrasFoto img{
+    width: 100%;
+    height: 100%;
+}
+.nosotrasText {
+    flex-basis: 50%;
+    text-align: center;
+    padding: 35px;
+}
+.nosotrasText h3 {
+    font-style: italic;
+    padding: 5px;
+}
+.nosotrasText p {
+    font-size: 19px;
+}
+@media (max-width:1210px){
+    #nosotras { 
+        flex-wrap: wrap;}
+        .nosotrasFoto{
+            flex-basis: 100%;}
+       .nosotrasText{
+                flex-basis: 100%;}
+         .nosotrasText p {
+                    font-size: 15px;
+                }
+
+}
+ /*--------Contacto--------*/
+ #contacto {
+     width: 100%;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    background-color: black;
+    color: white;
+ }
+ .contactoForm{
+    flex-basis: 50%;
+    padding: 40px 0 40px 30px ;
+ }
+ .contactoText{
+    flex-basis: 40%;
+ }
+ .contactoText h3{ 
+     text-align: center;
+    font-size: 22px;
+    margin-top:20px ;}
+.contactoText p { 
+        text-align: center;
+    padding: 0 30px 0 30px;
+      font-size: 18px;}
+ #botones {
+    text-align: right;
+    padding: 20px; }
+ @media (max-width:1159px){
+    #contacto { 
+        flex-wrap: wrap;}
+        .contactoForm{
+            flex-basis: 100%;
+            padding: 30px 0 30px 30px ;
+         }
+}
+/*--------Compra--------*/
+#compraFinal{
+    display: flex;
+    flex-wrap: wrap;
+    background-image: url(Fotos/fondoHome.jpg);
+    background-repeat: repeat;
+}
+.compraForm {
+   padding: 30px;
+   background-color: whitesmoke;
+   border-radius: 30px;
+   min-width: 400px;
+}
+
+.cardCompra {
+    margin-left: 70px;
+    margin-right: 70px;
+   width: 500px;
+    height: 500px;
+}
+
+#envios {
+    display: none;
+}
+@media (max-width:1185px) and (min-width:1072px){
+    .cardCompra {
+        margin-left:0px;
+        margin-right:0px;
+    }
+    
+    
+}
+
+@media (max-width:1072px){
+    .cardCompra {
+        margin-left:0px;
+        margin-right:0px;
+       width: 100%;
+        height:300px;
+    }
+    
+    
+}
