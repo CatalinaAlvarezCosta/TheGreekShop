@@ -35,7 +35,6 @@ function agregarAlCarrito(itemId) {
 }
   localStorage.setItem('carrito', JSON.stringify(carrito))
   JSON.parse (localStorage.getItem('carrito'))
-  console.log(carrito)
   actualizarCarrito()
 }
 function eliminarProducto(id) {
@@ -47,7 +46,6 @@ function eliminarProducto(id) {
   }
  localStorage.setItem('carrito', JSON.stringify(carrito))
   JSON.parse (localStorage.getItem('carrito'))
-  console.log(carrito)
   actualizarCarrito()
 }
 function actualizarCarrito() {
@@ -74,5 +72,5 @@ function vaciarCarrito (){
   carrito.splice (0, carrito.length)
   localStorage.clear() 
   actualizarCarrito()
-  console.log(carrito)
+
 }
