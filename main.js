@@ -1,34 +1,17 @@
 
 let totalCarrito = 0;
 let acumuladorCardsHome = ``;
-class Producto{
-  constructor(id,nombre, descripcion, precio ,imagenUno,imagenDos,stock) {
-    this.id = id;
-      this.nombre = nombre;
-      this.descripcion = descripcion;
-      this.precio  = precio;
-      this.imagenUno = imagenUno;  
-      this.imagenDos = imagenDos; 
-      this.stock = stock;
-      this.vendido = false; }
-      vender( ) {
-        this.vendido = true;
-        this.stock= this.stock - 1;
-      }   
+let baseDatosDeProductos = []
+
+const obtenerProductos = async () => {
+    const resp = await fetch('./stock.json')
+    const data = await resp.json()
+
+    baseDatosDeProductos = data
+    cardsHome(baseDatosDeProductos)
 }
-const productoUno = new Producto(1,"Cartera Santorini", "Bolso formato bandolera de tejido denim. Cuerpo acolchado craquelado con pespuntes. Asa de hombro de cadena metalizada. Interior forrado con dos compartimentos, uno de ellos con bolsillo.Cierre de imanes. Alto x Ancho x Fondo 20 x 24 x 12 cm.", 4300,"Fotos/Cart1.webp","Fotos/Cart1.2.webp",5);
 
-const productoDos = new Producto (2,"Cartera Mykonos","Bolso de hombro color negro,el más elegido de la temporada!Asa corta de hombro con detalle de arandela y hebilla metalizadas. Cierre mediante cremallera. Interior forrado con bolsillo. Alto x Ancho x Fondo 14 x 25 x 5 cm.",3500,"Fotos/Cart2.webp","Fotos/Cart2.2.webp",12);
-
-const productoTres = new Producto (3,"Cartera Atenas","Bolso formato shopper en color negro con detalle de bolsillo en la parte delantera. Asa de hombros de cadena y asa ajustable de color negro para llevarlo tipo bandolera. Cierre mediante imán. Alto x Ancho x Fondo 29 x 27.5 x 12 cm.",5000,"Fotos/Cart3.jpg","Fotos/Cart3.2.webp",8);
-
-const productoCuatro = new Producto (4,"Cartera Rodas","Bolso formato bandolera portamóvil con cierre mediante solapa y pieza metálica. Dispone de dos compartimentos en el interior. Compartimentos para tarjetas en la parte trasera.Alto x Ancho x Fondo 17.5 x 9.5 x 3 cm.",2500,"Fotos/Cart4.webp","Fotos/Cart4.2.webp",3);
-
-const productoCinco = new Producto (5,"Cartera Corfú","Bolso tipo bandolera con estampado animal tipo serpiente con detalle de cadena de asa corta y detalle de asa de hombro con cadena. Cierre mediante solapa e imán. Alto x Ancho x Fondo 15 x 23 x 5 cm.",3850,"Fotos/Cart5.webp","Fotos/Cart5.2.webp",0);
-
-const productoSeis = new Producto (6,"Cartera Creta","Bolso formato bandolera. Dispone de dos compartimentos en el interior.  Asa de hombro con cadena. Cierre mediante solapa e imán. Disponible en color lila. Alto x Ancho x Fondo: 10 x 18.5 x 4.5 cm.",3600,"Fotos/Cart6.webp","Fotos/Cart6.2.webp",17);
-
-const baseDatosDeProductos =  [productoUno,productoDos,productoTres,productoCuatro,productoCinco,productoSeis];
+obtenerProductos()
 
 
 const contenedorProductos = document.getElementById('productos-contenedor');

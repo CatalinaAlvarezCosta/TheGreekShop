@@ -10,7 +10,6 @@ if (ValorDelCarritoEnElStorage) {
   actualizarCarrito()
 }
 
-console.log (carrito);
 function sumarCantidad(id){
   let valorCantidad = document.getElementById(`inputCarrito${id}`)
   valorCantidad.innerText = parseInt(valorCantidad.innerText) + 1;

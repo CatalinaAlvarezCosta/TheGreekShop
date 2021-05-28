@@ -1,0 +1,13 @@
+[{"id":1,"nombre":"Cartera Santorini","descripcion" :"Bolso formato bandolera de tejido denim. Cuerpo acolchado craquelado con pespuntes. Asa de hombro de cadena metalizada. Interior forrado con dos compartimentos, uno de ellos con bolsillo.Cierre de imanes. Alto x Ancho x Fondo 20 x 24 x 12 cm.","precio": 4300,"imagenUno":"Fotos/Cart1.webp","imagenDos":"Fotos/Cart1.2.webp", "stock":5},
+  
+ {"id": 2,"nombre":"Cartera Mykonos","descripcion" :"Bolso de hombro color negro,el más elegido de la temporada!Asa corta de hombro con detalle de arandela y hebilla metalizadas. Cierre mediante cremallera. Interior forrado con bolsillo. Alto x Ancho x Fondo 14 x 25 x 5 cm.","precio":3500,"imagenUno":"Fotos/Cart2.webp","imagenDos":"Fotos/Cart2.2.webp","stock":12},
+  
+ {"id": 3,"nombre":"Cartera Atenas", "descripcion" :"Bolso formato shopper en color negro con detalle de bolsillo en la parte delantera. Asa de hombros de cadena y asa ajustable de color negro para llevarlo tipo bandolera. Cierre mediante imán. Alto x Ancho x Fondo 29 x 27.5 x 12 cm.","precio":5000,"imagenUno":"Fotos/Cart3.jpg","imagenDos":"Fotos/Cart3.2.webp","stock":8},
+  
+ { "id":4,"nombre":"Cartera Rodas", "descripcion" :"Bolso formato bandolera portamóvil con cierre mediante solapa y pieza metálica. Dispone de dos compartimentos en el interior. Compartimentos para tarjetas en la parte trasera.Alto x Ancho x Fondo 17.5 x 9.5 x 3 cm.","precio":2500, "imagenUno":"Fotos/Cart4.webp","imagenDos":"Fotos/Cart4.2.webp","stock":3},
+  
+ { "id":5,"nombre":"Cartera Corfú", "descripcion" :"Bolso tipo bandolera con estampado animal tipo serpiente con detalle de cadena de asa corta y detalle de asa de hombro con cadena. Cierre mediante solapa e imán. Alto x Ancho x Fondo 15 x 23 x 5 cm.","precio":3850,"imagenUno": "Fotos/Cart5.webp", "imagenDos":"Fotos/Cart5.2.webp","stock":8},
+  
+ { "id":6,"nombre":"Cartera Creta", "descripcion" :"Bolso formato bandolera. Dispone de dos compartimentos en el interior.  Asa de hombro con cadena. Cierre mediante solapa e imán. Disponible en color lila. Alto x Ancho x Fondo: 10 x 18.5 x 4.5 cm.","precio":3600,"imagenUno": "Fotos/Cart6.webp","imagenDos":"Fotos/Cart6.2.webp","stock":17}
+  
+]
